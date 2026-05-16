@@ -1,0 +1,14 @@
+MapReduce Execution Log
+============================================================
+OS:           Windows 10
+Python:       3.11.3
+Dataset:      Comp3041J MiniProject 2 Dataset.csv
+Dataset size: 4.24 MB
+Total lines:  50001
+
+Job Runtimes:
+  Output 1: Request Count by Service: 1.35 s  -> mr_outputs\output1_full.txt
+  Output 2: Server Error Count: 1.07 s  -> mr_outputs\output2_full.txt
+  Output 3: Top 10 Slow Endpoints: 1.39 s  -> mr_outputs\output3_full.txt
+
+  TOTAL: 3.81 s

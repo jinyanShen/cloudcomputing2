@@ -86,9 +86,16 @@ def main(data_url, chunk_size=2000):
             degraded.append((service, "; ".join(reasons)))
 
     print("\n===== Service Degradation Results =====")
-    for service, reason in degraded:
-        print(f"{service}, {reason}")
+    with open("ray_output.txt", "w", encoding="utf-8") as f:
+        f.write("===== Service Degradation Results =====\n")
+        for service, reason in degraded:
+            line = f"{service}, {reason}"
+            print(line)
+            f.write(line + "\n")
 
+    # for service, reason in degraded:
+    #     print(f"{service}, {reason}")
+    #
     return len(lines)
 
 
